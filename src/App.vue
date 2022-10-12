@@ -1,14 +1,22 @@
 <template>
   <v-app>
-    <h1>comartsau</h1>
-    <v-btn color="info">text</v-btn>
-    <v-icon>email</v-icon>
+    <Header/>
+    <Menu/>
+    <Content/>
   </v-app>
 </template>
 
 <script>
+import Header from "@/components/core/Header.vue"
+import Menu from "@/components/core/Menu.vue"
+import Content from "@/components/core/Content.vue"
 export default {
-  name: 'app'
+  name: 'App',
+  components: {
+    Header,
+    Menu,
+    Content
+  }
 
 }
 </script>
